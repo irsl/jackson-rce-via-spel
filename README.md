@@ -13,7 +13,7 @@ type-unsafe language by (ab)using Objects as base classes... But I wouldn't be s
 software would be exploited one day via this vulnerability.
 
 After the original discoveries (CVE-2017-7525) had been reported, the author patched this attack surface with a blacklist, 
-which was incomplete (as of by nature of blacklists). This proof-of-concept project is a follow-up to demonstrate one more
+which was incomplete (as by nature of blacklists). This proof-of-concept project is a follow-up to demonstrate one more
 way of exploitation; by abusing Spring classes via Jackson, this could lead to remote code execution.
 
 MITRE assigned CVE-2017-17485 to this vulnerability.
