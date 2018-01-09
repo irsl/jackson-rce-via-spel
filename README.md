@@ -3,10 +3,10 @@ An example project that exploits the default typing issue in Jackson-databind (h
 via Spring application contexts and expressions
 
 # Context
-The Jackson-databind project has a feature called default-typing. When the target class has some polymorph fields inside 
-(such as interfaces, abstract classes or the Object base class), the library can include type info into the JSON structure
-and use that info at unmarshalling. This  can be dangerous when the input is controlled by an attacker and the target class
-contains a field of type Object or something general (like Comparable).
+The Jackson-databind project has a feature called default-typing (not enabled by default). When the target class has some 
+polymorph fields inside (such as interfaces, abstract classes or the Object base class), the library can include type info
+into the JSON structure and use that info at unmarshalling. This  can be dangerous when the input is controlled by an 
+attacker and the target class contains a field of type Object or something general (like Comparable).
 
 How likely this is? I'm naive, so I hope Java developers don't degrade a type-safe language to the level of an interpreted
 type-unsafe language by (ab)using Objects as base classes... But I wouldn't be surprised if one day some huge enterprise 
