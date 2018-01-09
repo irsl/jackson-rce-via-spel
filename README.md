@@ -8,6 +8,10 @@ The Jackson-databind project has a feature called default-typing. When the targe
 and use that info at unmarshalling. This  can be dangerous when the input is controlled by an attacker and the target class
 contains a field of type Object or something general (like Comparable).
 
+How likely this is? I'm naive, so I hope Java developers don't degrade a type-safe language to the level of an interpreted
+type-unsafe language by (ab)using Objects as base classes... But I wouldn't be surprised if one day some huge enterprise 
+software would be exploited one day via this vulnerability.
+
 After the original discoveries (CVE-2017-7525) had been reported, the author patched these attack surface with a blacklist, 
 which was incomplete (as of by nature of blacklists). This proof-of-concept project is a follow-up to demonstrate one more
 way of exploitation; by abusing Spring classes via Jackson, this could lead to remote code execution.
