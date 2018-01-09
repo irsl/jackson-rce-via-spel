@@ -10,7 +10,7 @@ contains a field of type Object or something general (like Comparable).
 
 After the original discoveries (CVE-2017-7525) had been reported, the author patched these attack surface with a blacklist, 
 which was incomplete (as of by nature of blacklists). This proof-of-concept project is a follow-up to demonstrate one more
-way of exploitation.
+way of exploitation; by abusing Spring classes via Jackson, this could lead to remote code execution.
 
 MITRE assigned CVE-2017-17485 to this vulnerability.
 
