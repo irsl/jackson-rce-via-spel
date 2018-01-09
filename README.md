@@ -14,7 +14,9 @@ software would be exploited one day via this vulnerability.
 
 After the original discoveries (CVE-2017-7525) had been reported, the author patched this attack surface with a blacklist, 
 which was incomplete (as by nature of blacklists). This proof-of-concept project is a follow-up to demonstrate one more
-way of exploitation; by abusing Spring classes via Jackson, this could lead to remote code execution.
+way of exploitation; by abusing Spring classes via Jackson, this could lead to remote code execution. Note: 
+FileSystemXmlApplicationContext is happy to fetch the specified Spring context from anywhere, even from remote location 
+via http.
 
 MITRE assigned CVE-2017-17485 to this vulnerability.
 
