@@ -8,7 +8,7 @@ polymorph fields inside (such as interfaces, abstract classes or the Object base
 into the JSON structure and use that info at unmarshalling. This  can be dangerous when the input is controlled by an 
 attacker and the target class contains a field of type Object or something general (like Comparable).
 
-How likely this is? I'm naive, so I hope Java developers don't degrade a type-safe language to the level of an interpreted
+How likely is this? I'm naive, so I hope Java developers don't degrade a type-safe language to the level of an interpreted
 type-unsafe language by (ab)using Objects as base classes... But I wouldn't be surprised if one day some huge enterprise 
 software would be exploited one day via this vulnerability.
 
